@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marian Sousan - Personal Web Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="bg-[#1C1C1C] font-serif">
+        <nav class="navbar fixed w-full z-10 shadow-lg bg-[#BFA181]">
+            <ul class="ul flex list-none m-0 p-0 justify-end">
+                <li class="li"><a href="#home" class="a block text-[#F4F4F4] px-4 py-3 no-underline hover:text-[#1C1C1C]">Home</a></li>
+                <li class="li"><a href="#about" class="a block text-[#F4F4F4] px-4 py-3 no-underline hover:text-[#1C1C1C]">About</a></li>
+                <li class="li"><a href="#projects" class="a block text-[#F4F4F4] px-4 py-3 no-underline hover:text-[#1C1C1C]">Projects</a></li>
+            </ul>
+        </nav>
+        <main class="scroller h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
+            <section id="home" class="h-screen w-full snap-start flex flex-col justify-center items-center p-5">
+                <h1 class="animate-primary text-[#BFA181] text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Hello, I'm Marian.</h1>
+                <p class="animate-secondary text-[#d4d4d4] text-xl mb-8">Master's in Computer Science</p>
+                <a href="#about" class="next-button animate-tertiary text-[#F4F4F4] px-6 py-3 rounded font-bold no-underline bg-[#BFA181] transition-colors"> Learn More About Me</a>
+            </section>
+            <section id="about" class="h-screen w-full snap-start flex flex-col justify-center items-center p-5">
+                <h2 class="text-[#BFA181] text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <p class="less-wide-paragraph text-[#F4F4F4] text-xl text-center max-w-3xl mb-8">I am a computer science major, currently completing my masters. A lot of the recent research I have done has pertained to computer vision, where I worked topics such as fashion image classification and breast cancer reccurance prediction. I also have an interest in some artistic/game projects.</p>
+                <a href="#projects" class="text-[#F4F4F4] px-6 py-3 rounded font-bold no-underline bg-[#BFA181] transition-colors">View My Projects</a>
+            </section>
+            <section id="projects" class="h-screen w-full snap-start flex flex-col justify-center items-center p-5">
+                <h2 class="text-[#BFA181] text-3xl md:text-4xl font-bold mb-6">My Projects</h2>
+                <img src="images/image.png" alt="Snack bytes application image, featuring candied background and web games in the forfront. The games are snake, Flappy Bat, DoNot step there!, and solitare."  class="rounded-lg mb-3" width="461" height="217"/>
+                <ol class="bg-[#BFA181] rounded-lg p-2 max-w-7xl text-gray-900">
+                    <li class="mb-2"><strong>Fashion Image Classificaiton</strong> - Performed a comparative study of three CNN architectures for fashion image classification, evaluating 36 hyperparameter configurations using grid search. Presented paper the 10th International Conference on Big Data Analytics, Data Mining and Computational Intelligence.</li>
+                    <li class="mb-2"><strong>Breast Cancer Reccurance Prediction</strong> - Currently developing a ViT-based cancer classification pipeline using CAMELYON17 and benchmarking performance across HPC systems.</li>
+                    <li class="mb-2"><strong>Snack Bytes</strong> - Created a retro game collection with original art, using Firebase for user authentication and backend support.</li>
+                    <li class="mb-2"><strong>Simulation Showcase</strong> - Built one of three interactive 3D simulations and helped integrate them into a cohesive Three.js-based website.</li>
+                </ol>
+                <a href="#home" class="mt-8 bg-[#BFA181] text-[#F4F4F4] px-6 py-3 rounded font-bold no-underline hover:bg-[#BFA181] transition-colors">Back to Home</a>
+            </section>
+        </main>
+    </body>
+    <footer class="fixed bottom-0 w-full text-center bg-[#514f4c] p-1 z-1000">
+        <a href="https://www.linkedin.com/in/marian-sousan" target="_blank" class="linkedin-button">
+            <img src="images/logo-linkedin.svg" alt="LinkedIn Logo" width="40" height="40"/>
+        </a>
+        <a href="https://github.com/MSDS1203" target="_blank" class="github-button">
+            <img src="images/logo-github.svg" alt="GitHub Logo" width="40" height="40"/>
+        </a>
+    </footer>
+</html>

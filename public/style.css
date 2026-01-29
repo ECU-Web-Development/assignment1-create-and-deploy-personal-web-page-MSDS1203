@@ -1,0 +1,51 @@
+.linkedin-button {
+    background-color: #BFA181;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.github-button {
+    background-color: #BFA181;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.animate-primary {
+    animation: fadeInUp 1.5s ease-out forwards;
+    opacity: 0;
+}
+
+.animate-secondary {
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.animate-tertiary {
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
